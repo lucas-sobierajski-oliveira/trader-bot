@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonJS",
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "src/*": ["./src/*"],
+            "test/*": ["./test/*"],
+            "config/*": ["./config/*"],
+            "schemas/*": ["./src/interfaces/http/schemas/*"],
+            "json-server-mock/*": ["./json-server-mock/*"]
+        }
+    },
+    "exclude": ["node_modules", "**/node_modules/*"]
+}

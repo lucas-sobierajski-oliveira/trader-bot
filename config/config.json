@@ -1,0 +1,13 @@
+{
+    "application": {
+        "serviceName": "Trader Binance",
+        "logsPath": "$APP_LOGS_PATH",
+        "stackVisibleError": "$STACK_VISIBLE_ERROR"
+    },
+    "exchange": {
+        "binance": {
+            "apiKey": "$API_KEY",
+            "apiSecret": "$API_SECRET"
+        }
+    }
+}

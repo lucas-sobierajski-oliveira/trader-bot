@@ -1,0 +1,55 @@
+{
+    "name": "trader-binance",
+    "version": "1.0.0",
+    "description": "Nodejs project",
+    "repository": "",
+    "author": "soberalucas@gmail.com",
+    "collaborators": [],
+    "license": "MIT",
+    "main": "index.js",
+    "engines": {
+        "node": "f>=14.16.x <16.1.0"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "scripts": {
+        "dev": "cross-env NODE_PATH=. NODE_ENV=develop nodemon  --legacy-watch -r dotenv/config --unhandled-rejections=strict",
+        "debug": "cross-env NODE_PATH=. NODE_ENV=develop nodemon --inspect --legacy-watch -r dotenv/config --unhandled-rejections=strict",
+        "start": "node index.js",
+        "test:coverage": "jest --coverage --collectCoverage",
+        "test:coverage:only": "jest --coverage -t=only",
+        "lint": " eslint 'src/**/*.js' 'test/**/*.js' './**/*.js'",
+        "lint-fix": "eslint --fix 'src/**/*.js' 'test/**/*.js' './**/*.js'",
+        "format": "prettier -w ."
+    },
+    "dependencies": {
+        "awilix": "^4.3.4",
+        "awilix-express": "^4.0.0",
+        "axios": "^0.21.1",
+        "fejl": "^2.5.1",
+        "joi": "^17.3.0",
+        "node-binance-api": "^0.12.5",
+        "structure": "^2.0.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "dotenv": "^9.0.2",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.23.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-standard": "^5.0.0",
+        "husky": "^6.0.0",
+        "jest": "^26.6.3",
+        "jest-structure": "^2.0.1",
+        "json-server": "^0.16.3",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.3.0",
+        "superagent-defaults": "^0.1.14",
+        "supertest": "^6.1.3"
+    }
+}
