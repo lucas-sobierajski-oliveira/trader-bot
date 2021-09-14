@@ -1,7 +1,0 @@
-FROM node:14.15.1-alpine
-
-COPY . /home/node/app/
-
-WORKDIR /home/node/app/
-
-RUN npm install
