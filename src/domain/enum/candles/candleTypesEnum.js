@@ -8,5 +8,6 @@ module.exports = () =>
         SPINNING_TOP: 'SPINNING_TOP',
         PICOLE: 'PICOLE',
         PICOLE_DERRETIDO: 'PICOLE_DERRETIDO',
-        MARUBOZU: 'MARUBOZU'
+        MARUBOZU: 'MARUBOZU',
+        SPINNING_TOP_FAT: 'SPINNING_TOP_FAT'
     });

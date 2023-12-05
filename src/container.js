@@ -20,10 +20,16 @@ container
             'src/domain/enum/**/*.js',
             'src/domain/factories/**/*.js',
             'src/domain/schemas/**/*.js',
-            'src/domain/services/**/*.js',
             'src/interfaces/**/*.js',
             [
                 'src/infra/integration/**/*.js',
+                {
+                    injectionMode: 'PROXY',
+                    lifetime: 'SINGLETON'
+                }
+            ],
+            [
+                'src/domain/services/**/*.js',
                 {
                     injectionMode: 'PROXY',
                     lifetime: 'SINGLETON'
